@@ -99,14 +99,4 @@ python -m pip install .
 edge-vibe --help
 ```
 
-The ZIP excludes Git metadata and caches, so initialize the repository after extracting. To publish after reviewing the files, create an empty GitHub repository and run:
-
-```powershell
-git init --initial-branch=main
-git add .
-git commit -m "Initial edge-vibe-sentinel prototype"
-git remote add origin https://github.com/YOUR-ACCOUNT/edge-vibe-sentinel.git
-git push -u origin main
-```
-
-Replace `YOUR-ACCOUNT` before running the remote commands. This project's MIT license applies to its own source; external sensor and SDK documents retain their respective licenses. See [CONTRIBUTING.md](CONTRIBUTING.md) and [the roadmap](docs/roadmap.md).
+This project's MIT license applies to its own source; external sensor and SDK documents retain their respective licenses. See [CONTRIBUTING.md](CONTRIBUTING.md) and [the roadmap](docs/roadmap.md).

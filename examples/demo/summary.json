@@ -1,0 +1,20 @@
+{
+  "windows": 28,
+  "events_raised": 2,
+  "events_cleared": 2,
+  "assessments": {
+    "ALARM": 3,
+    "CLEAR_PENDING": 3,
+    "DATA_INVALID": 2,
+    "INSUFFICIENT_BASELINE": 1,
+    "MISSING_CONTEXT": 1,
+    "NORMAL_WINDOW": 7,
+    "NO_BASELINE": 2,
+    "PENDING": 6,
+    "SUPPRESSED_STATE": 3
+  },
+  "final_alarm_active": false,
+  "final_alarm_by_stream": {
+    "SIM-NODE-01/DEMO-MOTOR-01": false
+  }
+}

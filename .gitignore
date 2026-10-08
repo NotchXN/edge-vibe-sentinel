@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+build/
+dist/
+.test-work/
+demo-output/
+captures/
+analysis-output/
+.env
+.DS_Store
+work-output/
+# Large regenerated demo artifacts (python -m edge_vibe demo --output examples/demo)
+examples/demo/windows.jsonl
+examples/demo/references.jsonl
+examples/demo/assessments.jsonl
+examples/demo/report.html
+examples/demo/*.sqlite

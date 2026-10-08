@@ -1,0 +1,16 @@
+{
+  "band_low_hz": 10.0,
+  "band_high_hz": 400.0,
+  "min_reference_windows": 5,
+  "rpm_bin_width": 100.0,
+  "load_bin_width": 20.0,
+  "rms_enter_multiplier": 2.0,
+  "rms_clear_multiplier": 1.4,
+  "mad_multiplier": 6.0,
+  "minimum_enter_rms_g": 0.03,
+  "temperature_enter_c": 80.0,
+  "temperature_clear_c": 75.0,
+  "enter_windows": 3,
+  "clear_windows": 2,
+  "max_gap_seconds": 5.0
+}

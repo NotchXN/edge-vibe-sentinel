@@ -1,0 +1,52 @@
+name: Software checks
+on: [push, pull_request]
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ['3.11', '3.12', '3.13']
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Byte-compile sources
+        run: python -m compileall -q edge_vibe tests
+      - name: Unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Demo and analysis workflows
+        run: |
+          python -m edge_vibe demo --output demo-output
+          python -m edge_vibe train demo-output/references.jsonl --config demo-output/config.json --output work-output/baseline.json
+          python -m edge_vibe features demo-output/windows.jsonl --output work-output/features.jsonl
+          python -m edge_vibe analyze demo-output/windows.jsonl --baseline demo-output/baseline.json --output analysis-output
+          python -m edge_vibe report demo-output/windows.jsonl --baseline demo-output/baseline.json --output work-output/report.html
+      - name: Outbox workflow
+        run: |
+          python -m edge_vibe outbox enqueue demo-output/assessments.jsonl --db work-output/outbox.sqlite
+          python -m edge_vibe outbox enqueue demo-output/events.jsonl --db work-output/outbox.sqlite
+          python -m edge_vibe outbox export --db work-output/outbox.sqlite --output work-output/batch.json --limit 5
+          python -m edge_vibe outbox ack work-output/batch.json --db work-output/outbox.sqlite
+          python -m edge_vibe outbox prune --db work-output/outbox.sqlite --keep 2
+          python -m edge_vibe outbox status --db work-output/outbox.sqlite
+      - name: Report smoke test
+        run: node tests/report-smoke.cjs demo-output/report.html
+      - name: Packaging check
+        run: |
+          python -m pip install --quiet .
+          edge-vibe --version
+      - uses: actions/upload-artifact@v4
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+        with:
+          name: demo-output
+          path: demo-output
+          retention-days: 14

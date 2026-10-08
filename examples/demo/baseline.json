@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "kind": "baseline",
+  "created_at": "2026-10-08T15:47:10.798576+00:00",
+  "config": {
+    "band_low_hz": 10.0,
+    "band_high_hz": 400.0,
+    "min_reference_windows": 5,
+    "rpm_bin_width": 100.0,
+    "load_bin_width": 20.0,
+    "rms_enter_multiplier": 2.0,
+    "rms_clear_multiplier": 1.4,
+    "mad_multiplier": 6.0,
+    "minimum_enter_rms_g": 0.03,
+    "temperature_enter_c": 80.0,
+    "temperature_clear_c": 75.0,
+    "enter_windows": 3,
+    "clear_windows": 2,
+    "max_gap_seconds": 5.0
+  },
+  "groups": {
+    "5522a49258374dcd0a5d0590fd810c6c6f4861ce00b0a4584be0e1f52d09a27b": {
+      "context": {
+        "device_id": "SIM-NODE-01",
+        "asset_id": "DEMO-MOTOR-01",
+        "provenance": "simulated",
+        "sensor": {
+          "model": "simulated-accelerometer",
+          "mount_id": "demo-rigid-mount-01",
+          "axis_map": "x-radial-y-tangential-z-axial",
+          "filter_id": "synthetic-bandlimited-v1",
+          "calibration_id": "simulation-only",
+          "range_g": 10.0
+        },
+        "sample_rate_hz": 1024.0,
+        "sample_count": 1024,
+        "operating_state": "steady",
+        "cycle_phase": null,
+        "rpm_bin": 15,
+        "load_bin": 2
+      },
+      "reference_ids": [
+        "reference-motor-0",
+        "reference-motor-1",
+        "reference-motor-2",
+        "reference-motor-3",
+        "reference-motor-4"
+      ],
+      "reference_count": 5,
+      "median_vector_rms_g": 0.06413541582074603,
+      "mad_vector_rms_g": 0.0006413541582074717,
+      "enter_rms_g": 0.12827083164149206,
+      "clear_rms_g": 0.08978958214904444,
+      "ready": true
+    },
+    "c63529ccb4bdd44624b8f926fc221c5044a63ca27d68b67231de78b51733fbb0": {
+      "context": {
+        "device_id": "SIM-NODE-01",
+        "asset_id": "DEMO-MOTOR-01",
+        "provenance": "simulated",
+        "sensor": {
+          "model": "simulated-accelerometer",
+          "mount_id": "demo-rigid-mount-01",
+          "axis_map": "x-radial-y-tangential-z-axial",
+          "filter_id": "synthetic-bandlimited-v1",
+          "calibration_id": "simulation-only",
+          "range_g": 10.0
+        },
+        "sample_rate_hz": 1024.0,
+        "sample_count": 1024,
+        "operating_state": "actuating",
+        "cycle_phase": "extend",
+        "rpm_bin": null,
+        "load_bin": 2
+      },
+      "reference_ids": [
+        "reference-extend-0",
+        "reference-extend-1",
+        "reference-extend-2",
+        "reference-extend-3",
+        "reference-extend-4"
+      ],
+      "reference_count": 5,
+      "median_vector_rms_g": 0.09406527653709419,
+      "mad_vector_rms_g": 0.0009406527653709612,
+      "enter_rms_g": 0.18813055307418838,
+      "clear_rms_g": 0.13169138715193185,
+      "ready": true
+    },
+    "c40235e664b27dec1002183a96e7161d06cfc170670df3ce07ed8a0aa071c680": {
+      "context": {
+        "device_id": "SIM-NODE-01",
+        "asset_id": "DEMO-MOTOR-01",
+        "provenance": "simulated",
+        "sensor": {
+          "model": "simulated-accelerometer",
+          "mount_id": "demo-rigid-mount-01",
+          "axis_map": "x-radial-y-tangential-z-axial",
+          "filter_id": "synthetic-bandlimited-v1",
+          "calibration_id": "simulation-only",
+          "range_g": 10.0
+        },
+        "sample_rate_hz": 1024.0,
+        "sample_count": 1024,
+        "operating_state": "actuating",
+        "cycle_phase": "retract",
+        "rpm_bin": null,
+        "load_bin": 2
+      },
+      "reference_ids": [
+        "reference-retract-0",
+        "reference-retract-1",
+        "reference-retract-2"
+      ],
+      "reference_count": 3,
+      "median_vector_rms_g": 0.07696249898489523,
+      "mad_vector_rms_g": 0.0,
+      "enter_rms_g": 0.15392499796979045,
+      "clear_rms_g": 0.10774749857885331,
+      "ready": false
+    }
+  },
+  "excluded_reference_ids": [
+    "reference-not-approved",
+    "reference-invalid"
+  ],
+  "feature_method": "demean-periodic-hann-v1",
+  "model_sha256": "1846afec37e99ee302b237c0459de9ca92e6043fcda7c7c0f8906f798c682261"
+}

@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "edge-vibe-sentinel"
+version = "0.1.1"
+description = "Standalone vibration monitoring, operating-state baselines, and offline alert evidence"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["vibration", "condition-monitoring", "predictive-maintenance", "fft", "edge", "store-and-forward"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Manufacturing",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering",
+    "Topic :: System :: Monitoring",
+]
+dependencies = []
+
+[project.scripts]
+edge-vibe = "edge_vibe.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["edge_vibe*"]
+
+[tool.setuptools.package-data]
+edge_vibe = ["report.html"]

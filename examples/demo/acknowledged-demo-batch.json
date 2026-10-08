@@ -1,0 +1,721 @@
+{
+  "schema_version": 1,
+  "kind": "outbox_batch",
+  "batch_id": "ac3f9552-94bf-40e5-aa49-a00278b45280",
+  "messages": [
+    {
+      "record_id": "bde6b79a4dfd6683386b42e8fd31cfe7f21cde7b299e88041e02bdc7a0e3343c",
+      "payload_sha256": "ae29a8f334cac73850150bcc0ac0ec883319fb97e534346be33ec007721423de",
+      "payload": {
+        "schema_version": 1,
+        "kind": "assessment",
+        "record_id": "bde6b79a4dfd6683386b42e8fd31cfe7f21cde7b299e88041e02bdc7a0e3343c",
+        "window_id": "window-060",
+        "window_sha256": "72cbb75c1f0cb5bf0883c4e947c6c6dac98d7cee6ad49e54330b8a15d63d4639",
+        "device_id": "SIM-NODE-01",
+        "asset_id": "DEMO-MOTOR-01",
+        "observed_at": "2026-10-03T09:01:00+07:00",
+        "provenance": "simulated",
+        "operating_state": "startup",
+        "cycle_phase": null,
+        "rpm": 1500.0,
+        "load_pct": 45.0,
+        "temperature_c": 52.0,
+        "model_sha256": "1846afec37e99ee302b237c0459de9ca92e6043fcda7c7c0f8906f798c682261",
+        "context_key": null,
+        "features": {
+          "axes": {
+            "x": {
+              "mean_g": -2.7535664686698016e-17,
+              "rms_g": 0.3245035150040751,
+              "peak_g": 0.5299579207840917,
+              "crest_factor": 1.6331346080409528,
+              "dominant_hz": 50.0,
+              "dominant_amplitude_g_peak": 0.44999999999999973,
+              "band_rms_g": 0.3245035150040749
+            },
+            "y": {
+              "mean_g": 2.367847213935683e-17,
+              "rms_g": 0.19091883092036785,
+              "peak_g": 0.27,
+              "crest_factor": 1.414213562373095,
+              "dominant_hz": 50.0,
+              "dominant_amplitude_g_peak": 0.26999999999999985,
+              "band_rms_g": 0.19091883092036774
+            },
+            "z": {
+              "mean_g": 1.0,
+              "rms_g": 0.07954951288348659,
+              "peak_g": 0.11250000000000004,
+              "crest_factor": 1.4142135623730956,
+              "dominant_hz": 75.0,
+              "dominant_amplitude_g_peak": 0.1124999999999998,
+              "band_rms_g": 0.07954951288348645
+            }
+          },
+          "vector_rms_g": 0.38481249492447617,
+          "sample_count": 1024,
+          "frequency_resolution_hz": 1.0,
+          "band_hz": [
+            10.0,
+            400.0
+          ],
+          "method": "demean-periodic-hann-v1"
+        },
+        "quality_issues": [],
+        "assessment": "SUPPRESSED_STATE",
+        "reasons": [
+          "Startup, shutdown and stopped windows are not assessed against operating baselines"
+        ],
+        "thresholds": null,
+        "alarm_active": false,
+        "active_context_keys": []
+      }
+    },
+    {
+      "record_id": "c27cb161ab65c1d4b16ca1a1a3912875169c93c2d8146079078c9087e4e579e4",
+      "payload_sha256": "a021a6d7915fcfa0a898c720f1091749cb91defcec719d4b542231d20bfbf49b",
+      "payload": {
+        "schema_version": 1,
+        "kind": "assessment",
+        "record_id": "c27cb161ab65c1d4b16ca1a1a3912875169c93c2d8146079078c9087e4e579e4",
+        "window_id": "window-061",
+        "window_sha256": "9a9a295e3e2c9445969dfd54b3e24ad59c55ae3901a4849f59da860846b904e5",
+        "device_id": "SIM-NODE-01",
+        "asset_id": "DEMO-MOTOR-01",
+        "observed_at": "2026-10-03T09:01:01+07:00",
+        "provenance": "simulated",
+        "operating_state": "steady",
+        "cycle_phase": null,
+        "rpm": 1500.0,
+        "load_pct": 45.0,
+        "temperature_c": 52.0,
+        "model_sha256": "1846afec37e99ee302b237c0459de9ca92e6043fcda7c7c0f8906f798c682261",
+        "context_key": "5522a49258374dcd0a5d0590fd810c6c6f4861ce00b0a4584be0e1f52d09a27b",
+        "features": {
+          "axes": {
+            "x": {
+              "mean_g": -4.1395558923501725e-18,
+              "rms_g": 0.05408391916734585,
+              "peak_g": 0.08828221713964886,
+              "crest_factor": 1.632319153249361,
+              "dominant_hz": 50.0,
+              "dominant_amplitude_g_peak": 0.07499999999999996,
+              "band_rms_g": 0.05408391916734581
+            },
+            "y": {
+              "mean_g": 4.009127754362426e-18,
+              "rms_g": 0.03181980515339464,
+              "peak_g": 0.045000000000000005,
+              "crest_factor": 1.4142135623730954,
+              "dominant_hz": 50.0,
+              "dominant_amplitude_g_peak": 0.04499999999999997,
+              "band_rms_g": 0.031819805153394616
+            },
+            "z": {
+              "mean_g": 1.0,
+              "rms_g": 0.013258252147247762,
+              "peak_g": 0.018750000000000044,
+              "crest_factor": 1.4142135623730987,
+              "dominant_hz": 75.0,
+              "dominant_amplitude_g_peak": 0.018749999999999958,
+              "band_rms_g": 0.013258252147247735
+            }
+          },
+          "vector_rms_g": 0.06413541582074603,
+          "sample_count": 1024,
+          "frequency_resolution_hz": 1.0,
+          "band_hz": [
+            10.0,
+            400.0
+          ],
+          "method": "demean-periodic-hann-v1"
+        },
+        "quality_issues": [],
+        "assessment": "NORMAL_WINDOW",
+        "reasons": [],
+        "thresholds": {
+          "enter_rms_g": 0.12827083164149206,
+          "clear_rms_g": 0.08978958214904444,
+          "temperature_enter_c": 80.0,
+          "temperature_clear_c": 75.0
+        },
+        "alarm_active": false,
+        "active_context_keys": []
+      }
+    },
+    {
+      "record_id": "be9e6748493c110217e745c0678c3636ca9c00fc34b4fdb63ed86d1a433d9aed",
+      "payload_sha256": "abc21db1d83350c77cbaa1275ab28e0fa716797278a14035e6877ddb6603e4e3",
+      "payload": {
+        "schema_version": 1,
+        "kind": "assessment",
+        "record_id": "be9e6748493c110217e745c0678c3636ca9c00fc34b4fdb63ed86d1a433d9aed",
+        "window_id": "window-062",
+        "window_sha256": "4b4a83c4616871376c8448acf77bf9d2c749ed30684843bd9bff9204f578db80",
+        "device_id": "SIM-NODE-01",
+        "asset_id": "DEMO-MOTOR-01",
+        "observed_at": "2026-10-03T09:01:02+07:00",
+        "provenance": "simulated",
+        "operating_state": "steady",
+        "cycle_phase": null,
+        "rpm": 1500.0,
+        "load_pct": 45.0,
+        "temperature_c": 52.0,
+        "model_sha256": "1846afec37e99ee302b237c0459de9ca92e6043fcda7c7c0f8906f798c682261",
+        "context_key": "5522a49258374dcd0a5d0590fd810c6c6f4861ce00b0a4584be0e1f52d09a27b",
+        "features": {
+          "axes": {
+            "x": {
+              "mean_g": -3.8836990027201704e-18,
+              "rms_g": 0.05408391916734585,
+              "peak_g": 0.08828379612311699,
+              "crest_factor": 1.6323483483131145,
+              "dominant_hz": 50.0,
+              "dominant_amplitude_g_peak": 0.07499999999999996,
+              "band_rms_g": 0.05408391916734581
+            },
+            "y": {
+              "mean_g": 4.009127754362426e-18,
+              "rms_g": 0.03181980515339464,
+              "peak_g": 0.045000000000000005,
+              "crest_factor": 1.4142135623730954,
+              "dominant_hz": 50.0,
+              "dominant_amplitude_g_peak": 0.04499999999999997,
+              "band_rms_g": 0.031819805153394616
+            },
+            "z": {
+              "mean_g": 1.0,
+              "rms_g": 0.013258252147247762,
+              "peak_g": 0.018750000000000044,
+              "crest_factor": 1.4142135623730987,
+              "dominant_hz": 75.0,
+              "dominant_amplitude_g_peak": 0.018749999999999958,
+              "band_rms_g": 0.013258252147247735
+            }
+          },
+          "vector_rms_g": 0.06413541582074603,
+          "sample_count": 1024,
+          "frequency_resolution_hz": 1.0,
+          "band_hz": [
+            10.0,
+            400.0
+          ],
+          "method": "demean-periodic-hann-v1"
+        },
+        "quality_issues": [],
+        "assessment": "NORMAL_WINDOW",
+        "reasons": [],
+        "thresholds": {
+          "enter_rms_g": 0.12827083164149206,
+          "clear_rms_g": 0.08978958214904444,
+          "temperature_enter_c": 80.0,
+          "temperature_clear_c": 75.0
+        },
+        "alarm_active": false,
+        "active_context_keys": []
+      }
+    },
+    {
+      "record_id": "8dd9307d2a6b70e5841eee70e34fd8ee9f9dc90fe1ea1e94055ebf629f5c34b5",
+      "payload_sha256": "fd029f202453746f873207547598d3c2f0ff9528dd12523c1654444b3b41efd5",
+      "payload": {
+        "schema_version": 1,
+        "kind": "assessment",
+        "record_id": "8dd9307d2a6b70e5841eee70e34fd8ee9f9dc90fe1ea1e94055ebf629f5c34b5",
+        "window_id": "window-063",
+        "window_sha256": "3da9bcd304954901f07914ef26bb164f499c517941660bf173bdd43c886a79b2",
+        "device_id": "SIM-NODE-01",
+        "asset_id": "DEMO-MOTOR-01",
+        "observed_at": "2026-10-03T09:01:03+07:00",
+        "provenance": "simulated",
+        "operating_state": "steady",
+        "cycle_phase": null,
+        "rpm": 2100,
+        "load_pct": 45.0,
+        "temperature_c": 52.0,
+        "model_sha256": "1846afec37e99ee302b237c0459de9ca92e6043fcda7c7c0f8906f798c682261",
+        "context_key": "142f84dbb7f431043451ca15a1ddddb6a721b6745c3714dbef411e0458a0c182",
+        "features": {
+          "axes": {
+            "x": {
+              "mean_g": -5.100461831450973e-18,
+              "rms_g": 0.06490070300081502,
+              "peak_g": 0.10592847585093207,
+              "crest_factor": 1.63216222557099,
+              "dominant_hz": 50.0,
+              "dominant_amplitude_g_peak": 0.08999999999999994,
+              "band_rms_g": 0.06490070300081496
+            },
+            "y": {
+              "mean_g": 4.761698339352073e-18,
+              "rms_g": 0.03818376618407356,
+              "peak_g": 0.054000000000000006,
+              "crest_factor": 1.4142135623730954,
+              "dominant_hz": 50.0,
+              "dominant_amplitude_g_peak": 0.05399999999999996,
+              "band_rms_g": 0.038183766184073535
+            },
+            "z": {
+              "mean_g": 1.0,
+              "rms_g": 0.015909902576697315,
+              "peak_g": 0.022499999999999964,
+              "crest_factor": 1.4142135623730931,
+              "dominant_hz": 75.0,
+              "dominant_amplitude_g_peak": 0.02249999999999995,
+              "band_rms_g": 0.015909902576697287
+            }
+          },
+          "vector_rms_g": 0.07696249898489523,
+          "sample_count": 1024,
+          "frequency_resolution_hz": 1.0,
+          "band_hz": [
+            10.0,
+            400.0
+          ],
+          "method": "demean-periodic-hann-v1"
+        },
+        "quality_issues": [],
+        "assessment": "NO_BASELINE",
+        "reasons": [
+          "An approved, sufficiently populated baseline is required"
+        ],
+        "thresholds": null,
+        "alarm_active": false,
+        "active_context_keys": []
+      }
+    },
+    {
+      "record_id": "7572cfef1873055f7e10316867c52d479c3b78301a34e8d92d9e53bceaf621e4",
+      "payload_sha256": "d38f66036a8a780fc577360a88acf0bc297a5a58b36ba3bb468038e39aa24eba",
+      "payload": {
+        "schema_version": 1,
+        "kind": "assessment",
+        "record_id": "7572cfef1873055f7e10316867c52d479c3b78301a34e8d92d9e53bceaf621e4",
+        "window_id": "window-064",
+        "window_sha256": "ca5f9dbd61e5818228b385bea08d6f93669cb7003f90d995ad66e39dd2fd6cef",
+        "device_id": "SIM-NODE-01",
+        "asset_id": "DEMO-MOTOR-01",
+        "observed_at": "2026-10-03T09:01:04+07:00",
+        "provenance": "simulated",
+        "operating_state": "steady",
+        "cycle_phase": null,
+        "rpm": 1500.0,
+        "load_pct": 45.0,
+        "temperature_c": 52.0,
+        "model_sha256": "1846afec37e99ee302b237c0459de9ca92e6043fcda7c7c0f8906f798c682261",
+        "context_key": "5522a49258374dcd0a5d0590fd810c6c6f4861ce00b0a4584be0e1f52d09a27b",
+        "features": {
+          "axes": {
+            "x": {
+              "mean_g": -4.597906595933156e-18,
+              "rms_g": 0.05408391916734585,
+              "peak_g": 0.08830872332326976,
+              "crest_factor": 1.6328092468673714,
+              "dominant_hz": 50.0,
+              "dominant_amplitude_g_peak": 0.07499999999999996,
+              "band_rms_g": 0.05408391916734582
+            },
+            "y": {
+              "mean_g": 4.009127754362426e-18,
+              "rms_g": 0.03181980515339464,
+              "peak_g": 0.045000000000000005,
+              "crest_factor": 1.4142135623730954,
+              "dominant_hz": 50.0,
+              "dominant_amplitude_g_peak": 0.04499999999999997,
+              "band_rms_g": 0.031819805153394616
+            },
+            "z": {
+              "mean_g": 1.0,
+              "rms_g": 0.013258252147247762,
+              "peak_g": 0.018750000000000044,
+              "crest_factor": 1.4142135623730987,
+              "dominant_hz": 75.0,
+              "dominant_amplitude_g_peak": 0.018749999999999958,
+              "band_rms_g": 0.013258252147247735
+            }
+          },
+          "vector_rms_g": 0.06413541582074603,
+          "sample_count": 1024,
+          "frequency_resolution_hz": 1.0,
+          "band_hz": [
+            10.0,
+            400.0
+          ],
+          "method": "demean-periodic-hann-v1"
+        },
+        "quality_issues": [],
+        "assessment": "NORMAL_WINDOW",
+        "reasons": [],
+        "thresholds": {
+          "enter_rms_g": 0.12827083164149206,
+          "clear_rms_g": 0.08978958214904444,
+          "temperature_enter_c": 80.0,
+          "temperature_clear_c": 75.0
+        },
+        "alarm_active": false,
+        "active_context_keys": []
+      }
+    },
+    {
+      "record_id": "58df11047a12948d099db0b242a08d596249b5b1a8a99d69719922b1acb3848e",
+      "payload_sha256": "3a8e6023ec93ef109f41f7dd13d3050c18feeed590ac30e8dabd26a761be17ac",
+      "payload": {
+        "schema_version": 1,
+        "kind": "assessment",
+        "record_id": "58df11047a12948d099db0b242a08d596249b5b1a8a99d69719922b1acb3848e",
+        "window_id": "window-065",
+        "window_sha256": "4e061a3b206fc8210ec6b9e58ef84cc38188f370643c80e953e2da392e9ced38",
+        "device_id": "SIM-NODE-01",
+        "asset_id": "DEMO-MOTOR-01",
+        "observed_at": "2026-10-03T09:01:05+07:00",
+        "provenance": "simulated",
+        "operating_state": "actuating",
+        "cycle_phase": "extend",
+        "rpm": null,
+        "load_pct": 45.0,
+        "temperature_c": 52.0,
+        "model_sha256": "1846afec37e99ee302b237c0459de9ca92e6043fcda7c7c0f8906f798c682261",
+        "context_key": "c63529ccb4bdd44624b8f926fc221c5044a63ca27d68b67231de78b51733fbb0",
+        "features": {
+          "axes": {
+            "x": {
+              "mean_g": -7.689020988039716e-18,
+              "rms_g": 0.07932308144544059,
+              "peak_g": 0.13086565381940243,
+              "crest_factor": 1.6497802585923678,
+              "dominant_hz": 12.0,
+              "dominant_amplitude_g_peak": 0.11000000000000001,
+              "band_rms_g": 0.07932308144544058
+            },
+            "y": {
+              "mean_g": 1.4053765737158127e-18,
+              "rms_g": 0.04666904755831214,
+              "peak_g": 0.066,
+              "crest_factor": 1.4142135623730951,
+              "dominant_hz": 12.0,
+              "dominant_amplitude_g_peak": 0.066,
+              "band_rms_g": 0.04666904755831214
+            },
+            "z": {
+              "mean_g": 1.0,
+              "rms_g": 0.019445436482630057,
+              "peak_g": 0.02750000000000008,
+              "crest_factor": 1.4142135623730991,
+              "dominant_hz": 75.0,
+              "dominant_amplitude_g_peak": 0.027499999999999948,
+              "band_rms_g": 0.019445436482630023
+            }
+          },
+          "vector_rms_g": 0.09406527653709419,
+          "sample_count": 1024,
+          "frequency_resolution_hz": 1.0,
+          "band_hz": [
+            10.0,
+            400.0
+          ],
+          "method": "demean-periodic-hann-v1"
+        },
+        "quality_issues": [],
+        "assessment": "NORMAL_WINDOW",
+        "reasons": [],
+        "thresholds": {
+          "enter_rms_g": 0.18813055307418838,
+          "clear_rms_g": 0.13169138715193185,
+          "temperature_enter_c": 80.0,
+          "temperature_clear_c": 75.0
+        },
+        "alarm_active": false,
+        "active_context_keys": []
+      }
+    },
+    {
+      "record_id": "55cbaa8e4af71aa7d31186eb7ef2164bc95f83b05119a7a6d5e7667edda6d33c",
+      "payload_sha256": "29bdaed5ec258b86c901629a9d2fa5fcbe73fcc9e85a6b86acbeae8eb2b06517",
+      "payload": {
+        "schema_version": 1,
+        "kind": "assessment",
+        "record_id": "55cbaa8e4af71aa7d31186eb7ef2164bc95f83b05119a7a6d5e7667edda6d33c",
+        "window_id": "window-066",
+        "window_sha256": "99c8633a8ebcbaffb3f735541bac618af715bb2d192227125ba196c7200789d4",
+        "device_id": "SIM-NODE-01",
+        "asset_id": "DEMO-MOTOR-01",
+        "observed_at": "2026-10-03T09:01:06+07:00",
+        "provenance": "simulated",
+        "operating_state": "actuating",
+        "cycle_phase": "retract",
+        "rpm": null,
+        "load_pct": 45.0,
+        "temperature_c": 52.0,
+        "model_sha256": "1846afec37e99ee302b237c0459de9ca92e6043fcda7c7c0f8906f798c682261",
+        "context_key": "c40235e664b27dec1002183a96e7161d06cfc170670df3ce07ed8a0aa071c680",
+        "features": {
+          "axes": {
+            "x": {
+              "mean_g": -5.857466095196227e-18,
+              "rms_g": 0.06490070300081502,
+              "peak_g": 0.10695636598338809,
+              "crest_factor": 1.6480001146065388,
+              "dominant_hz": 12.0,
+              "dominant_amplitude_g_peak": 0.09000000000000001,
+              "band_rms_g": 0.06490070300081502
+            },
+            "y": {
+              "mean_g": 1.137783340814564e-18,
+              "rms_g": 0.03818376618407356,
+              "peak_g": 0.054,
+              "crest_factor": 1.4142135623730951,
+              "dominant_hz": 12.0,
+              "dominant_amplitude_g_peak": 0.054,
+              "band_rms_g": 0.03818376618407356
+            },
+            "z": {
+              "mean_g": 1.0,
+              "rms_g": 0.015909902576697315,
+              "peak_g": 0.022499999999999964,
+              "crest_factor": 1.4142135623730931,
+              "dominant_hz": 75.0,
+              "dominant_amplitude_g_peak": 0.02249999999999995,
+              "band_rms_g": 0.015909902576697287
+            }
+          },
+          "vector_rms_g": 0.07696249898489523,
+          "sample_count": 1024,
+          "frequency_resolution_hz": 1.0,
+          "band_hz": [
+            10.0,
+            400.0
+          ],
+          "method": "demean-periodic-hann-v1"
+        },
+        "quality_issues": [],
+        "assessment": "INSUFFICIENT_BASELINE",
+        "reasons": [
+          "An approved, sufficiently populated baseline is required"
+        ],
+        "thresholds": null,
+        "alarm_active": false,
+        "active_context_keys": []
+      }
+    },
+    {
+      "record_id": "3dbd6a1dc2379acac7a4e6b82aa80361b198f7bb21cc208a06137e6f7df8bc79",
+      "payload_sha256": "a9b9ed7f2f65c19f290e1e8b00eb22b099b0bfc2d70eb57d53c9a47a010fd48f",
+      "payload": {
+        "schema_version": 1,
+        "kind": "assessment",
+        "record_id": "3dbd6a1dc2379acac7a4e6b82aa80361b198f7bb21cc208a06137e6f7df8bc79",
+        "window_id": "window-067",
+        "window_sha256": "224698e808cdbb3dc5c86e7218b43135e117faa5747da6d3d9656c3109043ad9",
+        "device_id": "SIM-NODE-01",
+        "asset_id": "DEMO-MOTOR-01",
+        "observed_at": "2026-10-03T09:01:07+07:00",
+        "provenance": "simulated",
+        "operating_state": "steady",
+        "cycle_phase": null,
+        "rpm": 1500.0,
+        "load_pct": 45.0,
+        "temperature_c": 52.0,
+        "model_sha256": "1846afec37e99ee302b237c0459de9ca92e6043fcda7c7c0f8906f798c682261",
+        "context_key": "5522a49258374dcd0a5d0590fd810c6c6f4861ce00b0a4584be0e1f52d09a27b",
+        "features": {
+          "axes": {
+            "x": {
+              "mean_g": -1.4672092954102177e-17,
+              "rms_g": 0.19470210900244508,
+              "peak_g": 0.31793634157138173,
+              "crest_factor": 1.6329373276967896,
+              "dominant_hz": 50.0,
+              "dominant_amplitude_g_peak": 0.26999999999999985,
+              "band_rms_g": 0.19470210900244495
+            },
+            "y": {
+              "mean_g": 1.414533458175926e-17,
+              "rms_g": 0.1145512985522207,
+              "peak_g": 0.16200000000000003,
+              "crest_factor": 1.4142135623730954,
+              "dominant_hz": 50.0,
+              "dominant_amplitude_g_peak": 0.1619999999999999,
+              "band_rms_g": 0.11455129855222063
+            },
+            "z": {
+              "mean_g": 1.0,
+              "rms_g": 0.047729707730091955,
+              "peak_g": 0.0675,
+              "crest_factor": 1.4142135623730951,
+              "dominant_hz": 75.0,
+              "dominant_amplitude_g_peak": 0.06749999999999987,
+              "band_rms_g": 0.047729707730091865
+            }
+          },
+          "vector_rms_g": 0.23088749695468572,
+          "sample_count": 1024,
+          "frequency_resolution_hz": 1.0,
+          "band_hz": [
+            10.0,
+            400.0
+          ],
+          "method": "demean-periodic-hann-v1"
+        },
+        "quality_issues": [],
+        "assessment": "PENDING",
+        "reasons": [
+          "Vector acceleration RMS exceeds its baseline-derived enter threshold"
+        ],
+        "thresholds": {
+          "enter_rms_g": 0.12827083164149206,
+          "clear_rms_g": 0.08978958214904444,
+          "temperature_enter_c": 80.0,
+          "temperature_clear_c": 75.0
+        },
+        "alarm_active": false,
+        "active_context_keys": []
+      }
+    },
+    {
+      "record_id": "7f2a7db0189c4639c8323770135ac8c9773207f57ebfe421986723e89cfa04f9",
+      "payload_sha256": "7fb121b872d0e7cffea23fe373c43ea81595f069fdbcd636c9c48ea265829fef",
+      "payload": {
+        "schema_version": 1,
+        "kind": "assessment",
+        "record_id": "7f2a7db0189c4639c8323770135ac8c9773207f57ebfe421986723e89cfa04f9",
+        "window_id": "window-068",
+        "window_sha256": "62050067ec3d876e5ee88e036247cb7d937031265006840fe8dd4146b00f41fc",
+        "device_id": "SIM-NODE-01",
+        "asset_id": "DEMO-MOTOR-01",
+        "observed_at": "2026-10-03T09:01:08+07:00",
+        "provenance": "simulated",
+        "operating_state": "steady",
+        "cycle_phase": null,
+        "rpm": 1500.0,
+        "load_pct": 45.0,
+        "temperature_c": 52.0,
+        "model_sha256": "1846afec37e99ee302b237c0459de9ca92e6043fcda7c7c0f8906f798c682261",
+        "context_key": "5522a49258374dcd0a5d0590fd810c6c6f4861ce00b0a4584be0e1f52d09a27b",
+        "features": {
+          "axes": {
+            "x": {
+              "mean_g": -1.5115514701989803e-17,
+              "rms_g": 0.20191329822475784,
+              "peak_g": 0.3296696342686357,
+              "crest_factor": 1.6327286868528448,
+              "dominant_hz": 50.0,
+              "dominant_amplitude_g_peak": 0.27999999999999986,
+              "band_rms_g": 0.20191329822475776
+            },
+            "y": {
+              "mean_g": 1.4759350756675826e-17,
+              "rms_g": 0.11879393923934,
+              "peak_g": 0.16800000000000004,
+              "crest_factor": 1.4142135623730954,
+              "dominant_hz": 50.0,
+              "dominant_amplitude_g_peak": 0.1679999999999999,
+              "band_rms_g": 0.11879393923933991
+            },
+            "z": {
+              "mean_g": 1.0,
+              "rms_g": 0.049497474683058325,
+              "peak_g": 0.07000000000000006,
+              "crest_factor": 1.4142135623730963,
+              "dominant_hz": 75.0,
+              "dominant_amplitude_g_peak": 0.06999999999999987,
+              "band_rms_g": 0.049497474683058235
+            }
+          },
+          "vector_rms_g": 0.23943888573078517,
+          "sample_count": 1024,
+          "frequency_resolution_hz": 1.0,
+          "band_hz": [
+            10.0,
+            400.0
+          ],
+          "method": "demean-periodic-hann-v1"
+        },
+        "quality_issues": [],
+        "assessment": "PENDING",
+        "reasons": [
+          "Vector acceleration RMS exceeds its baseline-derived enter threshold"
+        ],
+        "thresholds": {
+          "enter_rms_g": 0.12827083164149206,
+          "clear_rms_g": 0.08978958214904444,
+          "temperature_enter_c": 80.0,
+          "temperature_clear_c": 75.0
+        },
+        "alarm_active": false,
+        "active_context_keys": []
+      }
+    },
+    {
+      "record_id": "70c12e304a55c42c77c9cce29c26a18fceb7e8cabd7a889feb9df797e3cb86e5",
+      "payload_sha256": "6a6d91e7039600a5d65631e12d62d3c62781078b2cb944e39138fde6634a04ab",
+      "payload": {
+        "schema_version": 1,
+        "kind": "assessment",
+        "record_id": "70c12e304a55c42c77c9cce29c26a18fceb7e8cabd7a889feb9df797e3cb86e5",
+        "window_id": "window-069",
+        "window_sha256": "f9d29873863a7630b18ff74975092279034ce56279f102405e7c08512ca5eb6d",
+        "device_id": "SIM-NODE-01",
+        "asset_id": "DEMO-MOTOR-01",
+        "observed_at": "2026-10-03T09:01:09+07:00",
+        "provenance": "simulated",
+        "operating_state": "steady",
+        "cycle_phase": null,
+        "rpm": 1500.0,
+        "load_pct": 45.0,
+        "temperature_c": 52.0,
+        "model_sha256": "1846afec37e99ee302b237c0459de9ca92e6043fcda7c7c0f8906f798c682261",
+        "context_key": "5522a49258374dcd0a5d0590fd810c6c6f4861ce00b0a4584be0e1f52d09a27b",
+        "features": {
+          "axes": {
+            "x": {
+              "mean_g": -1.5840469025721077e-17,
+              "rms_g": 0.2091244874470706,
+              "peak_g": 0.34133220145157034,
+              "crest_factor": 1.6321962368847958,
+              "dominant_hz": 50.0,
+              "dominant_amplitude_g_peak": 0.2899999999999998,
+              "band_rms_g": 0.20912448744707046
+            },
+            "y": {
+              "mean_g": 1.523064187998004e-17,
+              "rms_g": 0.12303657992645926,
+              "peak_g": 0.17400000000000002,
+              "crest_factor": 1.4142135623730951,
+              "dominant_hz": 50.0,
+              "dominant_amplitude_g_peak": 0.17399999999999988,
+              "band_rms_g": 0.12303657992645917
+            },
+            "z": {
+              "mean_g": 1.0,
+              "rms_g": 0.05126524163602469,
+              "peak_g": 0.07250000000000001,
+              "crest_factor": 1.4142135623730954,
+              "dominant_hz": 75.0,
+              "dominant_amplitude_g_peak": 0.07249999999999987,
+              "band_rms_g": 0.051265241636024604
+            }
+          },
+          "vector_rms_g": 0.24799027450688463,
+          "sample_count": 1024,
+          "frequency_resolution_hz": 1.0,
+          "band_hz": [
+            10.0,
+            400.0
+          ],
+          "method": "demean-periodic-hann-v1"
+        },
+        "quality_issues": [
+          "Missing samples"
+        ],
+        "assessment": "DATA_INVALID",
+        "reasons": [
+          "Missing samples"
+        ],
+        "thresholds": null,
+        "alarm_active": false,
+        "active_context_keys": []
+      }
+    }
+  ]
+}
